@@ -30,61 +30,6 @@
     }
 }
 
-/* ==== Button ===== */
-.btn {
-	&,
-	&:link
-	&:visited {
-		/* text-transform: uppercase; */
-		text-decoration: none;
-        display: inline-block;
-        padding: .75rem 2.5rem;
-		border-radius: .5rem;
-		transition: all 0.3s;
-        position: relative;
-        font-size: var(--normal-font-size);
-
-		// change for the <button> element
-		border: none;
-		cursor: pointer;
-
-	}
-
-	&--white {
-		background-color: var(--white-color);
-		color: var(--dark-color);
-
-		&::after {
-			background-color: var(--white-color);
-		}
-	}
-
-	&--blue {
-		background-color: var(--first-color);
-		color: var(--white-color);
-
-		&::after {
-			background-color: var(--first-color);
-		}
-	}
-
-	&:hover {
-		transform: translateY(-.3rem);
-		box-shadow: 0 1rem 2rem rgba(#000, 0.15);
-
-		&::after {
-			transform: scaleX(1.4) scaleY(1.6);
-			opacity: 0;
-		}
-	}
-	&:active,
-    &:focus {
-		outline: none;
-		transform: translateY(-.1rem);
-		box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
-    }
-}
-
 /*===== Margin =====*/
 :root{
     --mb-1: 0.5rem;
@@ -358,7 +303,8 @@ img{
             border-radius: .5rem;
         }
         
-        &:hover .portfolio__description {
+        &:hover .portfolio__description,
+        &:active .portfolio__description {
             bottom: 0;
         }
     }
@@ -372,9 +318,9 @@ img{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, .7);
+        backdrop-filter: blur(3px);
         border-radius: .5rem;
-        backdrop-filter: blur(10px);
         transition: .3s;
     }
 
@@ -393,9 +339,17 @@ img{
     }
 
     &__link {
+        font-size: 1.8rem;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
+
+        &-name {
+            &:hover {
+                transform: scale(1.1) translateY(-2px);
+                color: #5361FF;
+            }
+        }
     }
 }
 /* ===== CONTACT =====*/
