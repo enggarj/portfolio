@@ -318,7 +318,7 @@ img{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background: rgba(255, 255, 255, .7);
+        background: rgba(255, 255, 255, .8);
         backdrop-filter: blur(3px);
         border-radius: .5rem;
         transition: .3s;
@@ -334,19 +334,21 @@ img{
             margin: .5rem;
         }
         &-paragraph {
-            color: var(--text-color);
+            color: darken(#697477, 10%);
         }
     }
 
     &__link {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
 
         &-name {
+            color: var(--text-color);
+
             &:hover {
-                transform: scale(1.1) translateY(-2px);
+                transform: scale(1.1);
                 color: #5361FF;
             }
         }
@@ -501,7 +503,7 @@ img{
 
     .portfolio{
         &__container{
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(2,1fr);
 /*             grid-template-rows: repeat(2, 1fr); */
             column-gap: 2rem;
         }
