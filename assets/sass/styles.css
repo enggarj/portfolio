@@ -393,7 +393,6 @@ img {
 }
 
 .portfolio__link {
-  font-size: 2.2rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,6 +569,9 @@ img {
     /*             grid-template-rows: repeat(2, 1fr); */
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
+  }
+  .portfolio__link-name {
+    font-size: 1.5rem;
   }
   .contact__container {
     -ms-grid-columns: (1fr)[2];
