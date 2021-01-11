@@ -403,6 +403,7 @@ img {
 }
 
 .portfolio__link-name {
+  font-size: var(--h2-font-size);
   color: var(--text-color);
 }
 

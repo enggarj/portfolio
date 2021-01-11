@@ -344,6 +344,7 @@ img{
         justify-content: space-evenly;
 
         &-name {
+		font-size: var(--h2-font-size);
             color: var(--text-color);
 
             &:hover {
