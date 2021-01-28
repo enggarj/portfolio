@@ -268,7 +268,6 @@ img {
     border-radius: .5rem;
     transition: .3s; }
   .portfolio__detail {
-    padding: 0 2rem;
     text-align: center;
     width: 100%;
     color: var(--dark-color); }
@@ -276,6 +275,7 @@ img {
       padding: 0;
       margin: .5rem; }
     .portfolio__detail-paragraph {
+      font-size: var(--small-font-size);
       color: #515a5c; }
   .portfolio__link {
     width: 100%;
@@ -395,6 +395,8 @@ img {
     grid-template-columns: repeat(2, 1fr);
     /*             grid-template-rows: repeat(2, 1fr); */
     column-gap: 2rem; }
+  .portfolio__detail {
+    padding: 0 2rem; }
   .portfolio__link-name {
     font-size: 1.5rem; }
   .contact__container {

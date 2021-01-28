@@ -325,7 +325,6 @@ img{
     }
 
     &__detail {
-        padding: 0 2rem;
         text-align: center;
         width: 100%;
         color: var(--dark-color);
@@ -335,6 +334,7 @@ img{
             margin: .5rem;
         }
         &-paragraph {
+            font-size: var(--small-font-size);
             color: darken(#697477, 10%);
         }
     }
@@ -507,6 +507,10 @@ img{
             grid-template-columns: repeat(2,1fr);
 /*             grid-template-rows: repeat(2, 1fr); */
             column-gap: 2rem;
+        }
+
+        &__detail {
+            padding: 0 2rem;
         }
 
         &__link {
